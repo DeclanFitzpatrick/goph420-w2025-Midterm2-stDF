@@ -14,7 +14,7 @@ def main():
     plt.xlabel("Density (g/cm³)")
     plt.ylabel("P-wave Velocity (m/s)")
     plt.title("P-wave Velocity vs. Density")
-    plt.savefig("figures/Q2_vp_vs_rho.png")
+    plt.savefig("figures/Raw_data.png")
     plt.show()
 
     # Part b)
@@ -31,12 +31,6 @@ def main():
 
     log_n = Z @ a  # compute predicted values
 
-    plt.plot(p, log_n, label='Fitted line', color='black')
-    plt.xlabel("Density (g/cm³)")
-    plt.ylabel("ln(P-wave Velocity)")
-    plt.title("Linearized Regression in Transform Space")
-    plt.savefig("figures/Linearized_regression.png")
-    plt.show()
 
     # Plot ln(Vp) vs rho with regression line
     plt.figure(figsize=(8, 5))
