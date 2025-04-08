@@ -5,8 +5,6 @@ from Midterm2.Q2regression import multi_regress
 def main():
     data = np.loadtxt("Question_2_DATA_rho_vp.txt")
 
-    ln_vp = np.log(vp)     # Transform Vp to ln(Vp)
-
     p = data[:, 0]
     vp = data[:, 1]
 
@@ -18,6 +16,9 @@ def main():
     plt.title("P-wave Velocity vs. Density")
     plt.savefig("Q2_vp_vs_rho.png")
     plt.show()
+
+    vp = np.log(vp)
+
 
 if __name__ == "__main__":
     main()
