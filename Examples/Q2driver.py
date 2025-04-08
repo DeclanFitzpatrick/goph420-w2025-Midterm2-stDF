@@ -1,8 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from Midterm2.Q2regression import multi_regress
 
 def main():
     data = np.loadtxt("Question_2_DATA_rho_vp.txt")
+
+    ln_vp = np.log(vp)     # Transform Vp to ln(Vp)
 
     p = data[:, 0]
     vp = data[:, 1]
