@@ -35,7 +35,7 @@ def main():
     plt.xlabel("Density (g/cm³)")
     plt.ylabel("ln(P-wave Velocity)")
     plt.title("Linearized Regression in Transform Space")
-    plt.savefig("figures/Q2_lnvp_fit.png")
+    plt.savefig("figures/Linearized_regression.png")
     plt.show()
 
     # Plot ln(Vp) vs rho with regression line
